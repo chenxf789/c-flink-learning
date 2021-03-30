@@ -5,7 +5,7 @@ import org.apache.flink.streaming.api.scala._
 //1、定义样例类，传感器id、时间戳、温度
 case class SensorReading(id:String,timestamp:Long,temperature:Double)
 //2、实现代码
-object Sensor {
+object Gather {
   def main(args: Array[String]): Unit = {
     //(1)创建上下文运行环境对象
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
